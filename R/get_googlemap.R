@@ -363,7 +363,7 @@ get_googlemap <- function(
   class(map) <- c("ggmap","raster")
   # plot(map)
   print(center)
-  print( as.numeric(geocode(center, source = "google"))
+  print( as.numeric(geocode(center, source = "google")))
   # map spatial info
   if(is.character(center)) center <- as.numeric(geocode(center, source = "google")))
   ll <- XY2LatLon(
