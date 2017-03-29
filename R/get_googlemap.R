@@ -359,7 +359,7 @@ get_googlemap <- function(
   	map <- gray(.30 * map[,,1] + .59 * map[,,2] + .11 * map[,,3])
   	dim(map) <- mapd[1:2]
   }
-  map <- matrix(map, nrow = scale*size[2], ncol = scale*size[1])
+  map <- matrix(map, nrow = 2048, ncol = 2048)
   class(map) <- c("ggmap","raster")
   # plot(map)
 
