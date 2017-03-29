@@ -365,7 +365,7 @@ get_googlemap <- function(
   print(center)
   print( as.numeric(geocode(center, source = "google"))
   # map spatial info
-  if(is.character(center)) center <- as.numeric(geocode(center, source = "google"))
+  if(is.character(center)) center <- as.numeric(geocode(center, source = "google")))
   ll <- XY2LatLon(
     list(lat = center[2], lon = center[1], zoom = zoom),
     -size[1]/2 + 0.5,
