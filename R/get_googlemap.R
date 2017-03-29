@@ -338,7 +338,7 @@ get_googlemap <- function(
   # check to see if url is on file
   map <- file_drawer_get(url)
   if (!is.null(map) && !force) return(map)
-  myurl <- "http://restapi.amap.com/v3/staticmap?location=121.480197,31.202587&zoom=10&scale=2&size=1080*1080&markers=mid,,A:116.481485,39.990464&key=974ba3576c95fb458cdbb4bb52facdda"
+  myurl <- "http://restapi.amap.com/v3/staticmap?location=121.473701,31.230416&zoom=10&scale=2&size=1080*1080&markers=mid,,A:116.481485,39.990464&key=974ba3576c95fb458cdbb4bb52facdda"
     
   # finalize filename
   download.file(myurl, destfile = destfile, quiet = !messaging, mode = "wb")
