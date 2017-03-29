@@ -121,7 +121,7 @@
 #' }
 #'
 get_googlemap <- function(
-  center = c(lon = -95.3632715, lat = 29.7632836), zoom = 10, size = c(640,640),
+  center = c(lon = -95.3632715, lat = 29.7632836), zoom = 10, size = c(2048,2048),
   scale = 2, format = c("png8", "gif", "jpg", "jpg-baseline","png32"),
   maptype = c("terrain", "satellite", "roadmap", "hybrid"),
   language = "en-EN",
